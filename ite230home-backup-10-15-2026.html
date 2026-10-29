@@ -1,0 +1,265 @@
+<!-- File name : ITE230home.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+			<title> ITE 230 Home Page</title>
+			<link rel="icon" type="image/x-icon" href="images/favIcon.ico">
+			<link rel="stylesheet" href="css/homepagecss.css"/>
+			<meta charset="UTF-8">
+			<meta name="description" content="ITE 230 Web Page">
+			<!-- name=keywords for search engines to find web page -->
+			<meta name="keywords" content="HTML, CSS, JavaScript, ITE230">
+			<meta name="author" content="Prof. Sree">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--<base href="https://sreewebsite.freehosting.dev/ITE230-classwork/ite230home.html"
+			target="_blank"> -->
+					
+	</head>
+	<!-- Start of body tag start of html document -->
+	<body>
+	<!-- start of horizantal Nav Bar -->
+		<header id="topOfPage">
+			<nav class="top-nav"> 
+				<ul>
+					<li><a href="#courses" >Courses</a> </li>
+					<li><a href="computer.html" target="_blank">Computers</a></li>
+					<li><a href="phone.html" target="_blank">Phones</a> </li>
+					<li><a href="coffee.html" target="_blank">Coffee</a> </li>
+					<li>
+						<a href="ite230homeLayout1.html" target="_blank">
+						Massachusets Cities</a>
+						<!-- Dropdown Menu  -->
+							<div class="dropdown-ma">
+										<a href="#">Salem</a>
+										<a href="#">Peabody</a>
+										<a href="#">Beverly</a>
+							</div>
+					</li>
+					
+				</ul>
+			</nav>
+		</header> <!-- end of horizantal nav bar -->
+		<!-- start of HTML for Verticle NAV BAR -->
+		<div id='main'>
+			<div id ='v-nav-bar'> 
+				<aside>
+					<nav class="vbar"> 
+						<ul>
+							<li><a href="ite230home.html" >Home</a> </li>
+							<li><a href="computer.html" target="_blank">Computers</a></li>
+							<li><a href="phone.html" target="_blank">Phones</a> </li>
+							<li><a href="coffee.html" target="_blank">Coffee</a> </li>
+							<li><a href="ite230homeLayout1.html" target="_blank">
+							Massachusets Cities</a> </li>					
+						</ul>
+					</nav>
+				</aside>
+			</div>
+			<div id='content'>
+				<h1>Welcome to my first ITE 230 Home Page &#x1F60D; </h1>
+				<h2>Welcome to Fall 2026 &hearts;</h2>
+				<button type="button"
+						onclick="document.getElementById('date').innerHTML = Date();
+						document.getElementById('date').style.color='DarkSlateBlue'">
+					Display Date and Time
+				</button>
+					<h4 id="date"></h4>
+				<noscript>Sorry, your browser does not support JavaScript!</noscript>
+				<h3><a id="btmpage"href="#bottom">Go to Bottom of the page</a></h3>
+				
+				<h3> In this course, we are going to learn 
+				<abbr title="Hyper Text Markup Language">
+					<button onclick="document.location='htmltutorial.html'" 
+					class="mybutton">
+					HTML</button>
+				</abbr>,
+				<abbr title="Cascading Style Sheets">CSS</abbr>,
+				Javascript, <abbr title="Hypertext Preprocessor">PHP</abbr>,
+				and My<abbr title="Structured Query Language">SQL </abbr></h3>
+				<!-- HTML Description List, used for describing technical
+				terms and its description -->
+				<dl>
+					<dt>HTML</dt>
+					<dd>--Hyper Text Markup Language</dd>
+					<dt>CSS</dt>
+					<dd>--Cascading Style Sheets</dd>
+					<dt>PHP</dt>
+					<dd>--Hypertext Preprocessor</dd>
+				</dl>
+				<!-- HTML Tables -->
+				<table id="courses">
+					<caption> Fall 2026 Course Details</caption>
+						<tr>
+							<th id="cn">Course Numbers </th>
+							<th id="cn">Course Title</th>						
+							<th id="in" id="cn">Instructor Name</th>
+							<th id="cn">Course Credits</th>
+						</tr>	
+						<tr>
+							<td>ITE 230</td>
+							<td>Web Systems</td>
+							<td id="in">Prof. Sree</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>ITE 420</td>
+							<td>Database Administration</td>
+							<td id="in">Prof. Sree</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>ITE 105</td>
+							<td>Problem Sovling with Algorthims</td>
+							<td id="in">Prof. Sree</td>
+							<td>3</td>
+						</tr>		
+				</table>
+				<!-- <ul> tag: used for unordered List, 
+				<li> List Item, a pair for each item -->
+				<ul id="ul-list">
+					<li> I am the output of li tag in ul tag</li>
+					<li> <i> I am the output of  italic tag </i></li>
+					<li><em> I am the output of emphasize tag</em></li>
+					<li><small>I am the output of small element</small></li>
+					<li><mark>I am the output of mark element<mark></li>
+					<li>I love H<sub>2</sub>O</li>
+				</ul>
+				<bdo dir="rtl">I am the output of bdo righ to left</bdo>
+				<p>Here is an example of a math equation which used superscript.
+				c<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup></p>
+				<hr>
+				<p> Below is the output of a blockquote tag:</p>
+				<blockquote cite="http://www.worldwildlife.org/who/index.html">
+					For 60 years, WWF has worked to help people and 
+					nature thrive. As the world's leading conservation
+					organization, WWF works in nearly 100 countries.
+					At every level, we collaborate with people around the world 
+					to develop and deliver innovative solutions that protect
+					communities, wildlife, and the places in which they live.
+				</blockquote>
+				<p>WWF's goal is to: <q>Build a future where people 
+				live in harmony with nature.</q></p>
+				<hr>
+				<p id="iam" title="I am a tooltip">Today I am learning 
+				<b>HTML</b><strong>Programming</strong></p>
+				<!-- target = _blank opens link in new tab" -->
+				<a href="https://salemstate.edu" target="_blank" 
+				title="Home Page of SSU">
+				Go to SSU Website </a>
+				<br><br>
+				<p> SSU Address Below:</p>
+				<address>
+					Instructor: Prof. Sree <br> 
+					352 Lafayette Street <br>
+					Salem, MA 01970  <br>
+					<a href="mailto:admissions@salemstate.edu"
+					target="_blank">Send Email </a><br>
+					Phone No: 978.542.6200 <br>
+				</address>
+				<hr>
+				<a href="https://www.w3schools.com/html/default.asp" target="_blank">
+					<img src="images/web-systems.png" 
+									alt="Web Systems " width="300" height="300">				
+				</a>
+				<!-- code to implement image maps-->
+				<img src="images/workplace.jpg" alt="work desk" usemap="#deskmap">
+				<map name="deskmap">
+					<area shape="rect" coords="34,44, 270,350" alt="picutre of laptop" href="computer.html">
+					<area shape="rect" coords="90,172,333,250" alt="phone picture" href="phone.html">
+					<area shape="circle" coords="337,300,44" alt="coffee filled in mug" href="coffee.html">			
+				</map>
+				<!-- show different pictures based on device width: laptop,ipad, mobile-->
+				<picture>
+					<source media="(min-width:650px)" srcset="images/laptop-pic.png" alt="picture of web">
+					<source media="(min-width:465px)" srcset="images/ipad-pic.png" alt="image of web">
+					<source media="(min-width:320px)" srcset="images/mobile-pic.png" alt="mobile of web">
+					
+					<img src="images/laptop-pic.png" alt="picture of web">
+				</picture>
+
+			<figure>
+				<img src="images/web-systems.png" alt=" Web Systems Illustration">
+				<figcaption>Fig1. Web Systems Diagram showing components 
+				</figcaption>
+			</figure>
+			<hr>
+			<!-- Implementing <div> tag and <section> tag,display of css -->
+			
+				<h1> SSU Campus Locations</h1>
+				<div class='mycontainer'>
+					<div class='campus'>
+						<h3>North Campus</h3>
+						<p>North Campus hosts College of Arts and Sciences
+							,Library, North Cafe Dinning , BookStore,				
+						</p>			
+					</div>
+			
+					<div class='campus'> 
+						<h3>Central Campus</h3>
+						<p>Central Campus hosts Student Navigation,
+						Business School, Dorms, Marsh Dinning, StarBucks 
+						and more </p>
+					</div>
+					
+					<div class='campus'>
+						<h3>O'Keef Center</h3>
+						<p>O'Keef Center hosts commencement and grdaution
+						Fitness Center, Outdoor Soccer Playground and more </p>
+					</div>		
+				</div>
+			<br>
+			<hr>
+			<!-- Implement<iframe> tag to links documents wintin another pages -->
+			<hr> <!--docs/Salem-State-Campus-Map 2024.pdf -->
+				<iframe src="docs/Salem-State-Campus-Map 2024.pdf" 
+				title="SSU Campus Map 2024" height="500" width="700"> </iframe>
+				
+			<hr>
+			<!-- Computer Code Tags in HTML -->
+			<pre>
+			
+				<code>
+			
+					Define addNumbers functionn using code tag
+					
+					function addNumbers(int x, int y)
+					{
+						
+						answer = x+y;
+						return answer;
+					} 
+						Save the code by pressing <kbd> Ctrl +S </kbd>
+						This is the <samp>sample outoput</samp> of a samp tag
+						x &lt y and y &gt x
+				</code>
+				<span> This is how we use :x &lt; y and y &gt; x </span>
+
+			</pre>
+			<pre> Instruction on how to Run HTML Page
+				<ol id="ol-list">
+					<li>Write the html code in a file using texteditor</li>
+					<li>Save the file as .HTML </li>
+					<li>Open with file using browser of your choice </li>
+					<li>Test the output </li>
+					<li> Repeat above step for more coding and testing </li>
+				</ol>
+			</pre>
+			</div><!-- close of content div-->
+		</div> <!-- close of main div -->
+		<footer id="bottom">
+			<nav class="top-nav"> 
+				<ul>
+					<li><a href="#courses" >Courses</a> </li>
+					<li><a href="computer.html" target="_blank">Computers</a></li>
+					<li><a href="phone.html" target="_blank">Phones</a> </li>
+					<li><a href="coffee.html" target="_blank">Coffee</a> </li>
+					<li><a href="ite230layout1.html" target="_blank">
+					Massachusets Cities</a> </li>					
+				</ul>
+			</nav>
+		 <p>This webpage created by Prof. Sree Copyright &copy 2026 &hearts;</p>
+		 <h3><a id="btmPage"href="#topOfPage">Go to Top</a> </h3>
+		</footer>
+		
+	</body> <!-- End of Body Tag -->
+</html>

@@ -1,0 +1,263 @@
+					/* filename: homepagecss.css
+					Location: Same folder as html within css folder
+					External CSS file for ITE230Home.html
+					*/
+					body { 
+							/*background-color:#D6F0B1;*/
+							background-image: url('../images/back-image.png');
+							background-repeat:no-repeat;
+							background-attachment: fixed;
+							background-size: 100% 100%;
+							margin-top: 20px;
+							margin-left: 20px; 
+							margin-bottom: 20px;
+							margin-right:20px;
+						}
+					h1{
+						font-family:verdana;
+						text-align:center;
+						color:#5a3e1c
+					}
+					h2{
+						font-size:200%;
+						text-align:center;
+						color:rgb(200,150,100)
+					}
+					h3{
+						color:hsl(94, 53%, 31%)
+					}
+					img{
+						border: 10px solid slateblue;
+						padding:10px;
+						margin: 20px; 
+						width: 300px;
+						height: 300px;
+						/*20 px will be applied for TRBL imagin a invisible rectangle 
+						with 4 sides. 
+						(T-top side, R-Right side, B- Bottom, L-for Left )*/
+					}
+					#iam{
+							font-size:150%;
+							color:purple
+					}
+					a{
+						color:DarkSlateGray;
+					}
+					a:link {
+					  color: DarkOrchid;
+					  background-color: transparent;
+					  text-decoration: none;
+					}
+
+					a:visited {
+					  color: DarkSlateGray;
+					  background-color: transparent;
+					  text-decoration: none;
+					}
+
+					a:hover {
+					  color: red;
+					  background-color: transparent;
+					  text-decoration: underline;
+					}
+
+					a:active {
+					  color: DarkCyan;
+					  background-color: transparent;
+					  text-decoration: underline;
+					}
+					#btmpage , #btmPage{
+						float:right;
+					}
+					th{
+						padding: 10px;
+						border:2px ridge DarkSlateGray;
+						}
+					td{
+						padding: 10px;
+						border:2px groove darkblue;
+						text-align: center;
+						
+					}
+					tr:nth-child(odd) {	
+						background-color:#D6F0B1;	
+						}
+						
+					tr:hover {	
+						background-color:lightyellow;	
+					}
+					th, td{
+						border: 3px solid black;
+						border-radius:10px;
+						border-style: groove;
+						border-color:#5B891A;
+						/*border-collapse: collapse;*/	
+					}
+					#in{
+						width: 200px;
+					}
+					#cn{
+						height: 25px;
+					}
+					caption {
+						font-weight: bold;
+					}
+					#ul-list {
+						list-style-type:square;
+					}
+					#ol-list{
+						list-style-type:upper-roman;
+					}
+
+					/* display:flex for out dive, displya:inline-block for inner divs */
+
+					.mycontainer{
+						width:100%;
+						border:2px solid darkblue;
+						background-color: lightgreen;
+						overflow:auto;
+						display:flex;	
+					}
+					.campus{
+							border:1px solid black;
+							background-color:#E0F0C6;
+							display:inline-block;
+							width:30%;		
+							margin:auto;	
+					}
+					.mybutton {
+						background-color:darkgreen;
+						color: white;
+						font-size: 15px;
+						padding: 12px;
+						border: none;
+						border-radius: 5px;
+						cursor: pointer;
+					}
+					.mybutton:hover{
+						background-color:lightgreen;
+					}
+					iframe {
+						border: 4px dashed orange;
+					}
+					/* Start of Horizantal Nav Bar Styling */
+					.top-nav ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						overflow: hidden;									
+					}
+					.top-nav ul li {
+						float: left;
+					}
+					.top-nav ul li a {
+						display: block;
+						color: DarkSlateGray;
+						text-align: center;
+						padding: 14px 16px; /* top 14px, right 16px*/
+						text-decoration: none;
+					}
+					.top-nav ul li a:hover{
+						background-color:#FFCC99;
+					}
+					nav {
+						background: linear-gradient(to right, #fff2cc, #ffe599); 
+					}
+					/* End of Horizantal  Nav Bar Styling */
+					/* Start of Vertical Nav Bar Styling */
+					#main{
+						width: 100%;
+						overflow:auto;
+						display:flex;
+					}
+					#content{
+						margin-left: 50px;
+						width:40%;
+					}
+					#v-nav-bar{
+						margin-top : 100px;
+					}
+					#v-nav-bar #content {
+							width:30%;		
+							margin:auto;
+					}
+					.vbar ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						overflow: hidden;									
+					}
+					.vbar li a {
+						display: block;
+						color: DarkSlateGray;
+						text-align: center;
+						padding: 14px 16px; /* top 14px, right 16px*/
+						text-decoration: none;
+					}
+					.vbar a:hover{
+						background-color:#FFCC99;
+					}
+					ul li a.active {
+						background-color: #FFCCCC;
+					}
+					aside {
+						background: linear-gradient(to right, #fff2cc, #ffe599);
+						width: auto;
+						height:auto;
+					}
+					header{
+						margin-left: 150px;
+					}
+					/* End  of Vertical Nav Bar Styling */
+					
+					/* Start of Dropdown Menu Styling  div class= dropdown-ma*/
+					.dropdown-ma {
+						/*display:none;*/
+						position: absolute;
+						background-color: #f9f9f9;
+						min-width: 200px;
+						box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					}
+					.dropdown-ma a{
+						display:block;
+					}
+					.dropdown-ma a:hover {
+						/*background-color:#FFCC99;*/
+						display:block;
+						
+					}
+					/* Start of Image Gallary */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

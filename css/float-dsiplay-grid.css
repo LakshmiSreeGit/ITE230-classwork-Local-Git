@@ -1,0 +1,26 @@
+/* float:left you need at least two divs  */
+.mycontainer{
+	width:100%;
+	border:2px solid darkblue;
+	background-color: lightgreen;
+	overflow:auto;	
+}
+.campus{
+		border:1px solid black;
+		background-color:#E0F0C6;		
+		width:30%;
+		float:left;
+		margin:auto;	
+}
+/* display:grid and grid-template-columns  */
+.mycontainer {
+	border:1px solid black;
+	background-color:#E0F0C6;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+}
+.campus{
+		border:1px solid black;
+		background-color:#E0F0C6;					
+		margin:auto;	
+}

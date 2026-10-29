@@ -1,0 +1,170 @@
+<!DOCTYPE html><!-- Filename contactForm.html-->
+<html lang="en-US">
+	<head>
+			<title> Contact Form </title>	
+			<link rel="icon" type="image/x-icon" href="images/favIcon.ico"/>
+			<link rel="stylesheet" href="css/homepagecss.css"/>			
+			<meta charset="UTF-8">
+			<meta name="description" content="Contact Form">
+			<!-- name=keywords for search engines to find web page -->
+			<meta name="keywords" content="HTML, CSS, JavaScript,Contact ITE230">
+			<meta name="author" content="Prof. Sree">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+							
+	</head>
+	<!-- Start of body tag start of html document -->
+	<body>
+		<header id="topOfPage">
+			<nav class="top-nav"> 
+				<ul>
+					<li><a href="#courses" >Courses</a> </li>
+					<li><a href="./computer.html" target="_blank">Computers</a></li>
+					<li><a href="./phone.html" target="_blank">Phones</a> </li>
+					<li><a href="./coffee.html" target="_blank">Coffee</a> </li>
+					<li><a href="./ite230homeLayout1.html" target="_blank">
+					Massachusets Cities</a>						
+					</li>
+					<li><a href="./contactForm.html" target="_blank">
+					Contact Form</a></li>
+				</ul>
+			</nav>
+		</header> 
+		<!-- end of header, end of HORIZANTLE NAV BAR -->
+		<!-- Start of VERTICLE NAV Bar -->
+		<div id='main'>
+			<div id ='v-nav-bar'> 
+				<aside>
+					<nav class="vbar"> 
+						<ul>
+							<li><a href="ite230home.html" >Home</a> </li>
+							<li><a href="computer.html" target="_blank">Computers</a></li>
+							<li><a href="phone.html" target="_blank">Phones</a> </li>
+							<li><a href="coffee.html" target="_blank">Coffee</a> </li>
+							<li><a href="ite230homeLayout1.html" target="_blank">
+							Massachusets Cities</a> </li>
+							<li><a href="./contactForm.html" target="_blank">
+								Contact Form</a></li>							
+						</ul>
+					</nav>
+				</aside>
+			</div>
+			<div id='content'>
+				<br><br>		
+				<h1>Welcome to Contact Form</h1>
+				<!--Start of Form Tag with labels and input fields -->
+				<form action="./contactFormProcess.html" target="_blank" method="post"
+				autocomplete="on">
+					<fieldset>
+						<legend>Student Information </legend>
+							<!-- First label and input tag -->
+							<label for="stufname">First Name <span>*</span>:</label>
+							<input type="text"id="stufname" name='fname' required
+							placeholder="Enter Your First Name" size="25" autofocus/>
+							<br><br>
+							<!-- Second label and input tag -->
+							<label for="stulname">Last Name:</label>
+							<input type="text"id="stulname" name='lname'required/>
+							<br><br>
+							<!-- Third label and input tag -->
+							<label for="stuemail">Email <span>*</span>:</label>
+							<input type="email"id="stuemail" name='semail'
+							placeholder="yourname@domain.com"required/>
+							<br><br>
+							<!-- Fourth label and input tag -->
+							<label for="stuphone">Phone:</label>
+							<input type="tel"id="stuphone" name='sphone'
+							placeholder="(978)-542-2379" size="17"/>							
+							
+					 </fieldset>
+					 <br><br>
+					 <fieldset>
+						<legend>Student Login Information</legend>
+							<!-- First label in second feildset  and input tag -->
+							<label for="stuuname">Username <span>*</span>:</label>
+							<input type="text"id="stuuname" name='uname'required/>
+							<br><br>							
+							<!-- second label in second feildset  and input tag -->
+							<label for="stupwd">Password <span>*</span>:</label>
+							<input type="password"id="stupwd" name='pwd'required/>	
+					 </fieldset>
+					 <br><br>
+					 <fieldset>
+						<legend>Student's Fav Programing Lang.</legend>
+							<!-- example of checkboxes (zero or more)-->
+							<input type="checkbox" id="lang1" name="lang1" value="html">
+							<label for="lang1"> HTML</label><br>
+							<!-- code to display second checkbox and a label -->
+							<input type="checkbox" id="lang2" name="lang2" value="css">
+							<label for="lang2"> CSS</label><br>
+							<!-- code to display second checkbox and a label -->
+							<input type="checkbox" id="lang3" name="lang3" value="python">
+							<label for="lang3"> Python</label><br>
+							<!-- code to display second checkbox and a label -->
+							<input type="checkbox" id="lang4" name="lang4" value="java">
+							<label for="lang4"> Java</label><br>
+					 </fieldset>
+					 <br><br>
+					 <fieldset>
+						<legend>Student's Fav Course Modes .</legend>
+							<!-- example of radio type(1 among more) -->	
+							<input type="radio" id="inperson" name="fav_course_mode" value="inPerson">
+							<label for="inperson">In-Person</label><br>
+                             <!-- Code for second radio button and a label-->							
+							<input type="radio" id="virtual" name="fav_course_mode" value="virtual">
+							<label for="virtual">Virtual</label><br>
+							<!-- Code for third radio button and a label-->							
+							<input type="radio" id="hybrid" name="fav_course_mode" value="hybrid">
+							<label for="hybrid">Hybrid</label><br>							
+					 </fieldset>
+					  <br><br>
+					 <fieldset>
+						<legend>Student's Fav Semester Term</legend>
+							<!-- example of drop-down List in html: 1 among others) -->	
+							<label for="terms">Choose a fav Term:</label>
+							<select id="terms" name="semester" > 
+								<option value="Fall" selected>Fall</option>
+								<option value ="Spring">Spring</option>
+								<option value="Winter">Winter</option>
+								<option value="Summer">Summer</option>
+							</select>							
+					 </fieldset>
+					 <br><br>
+					 <fieldset>
+						<legend>Student's Comments.</legend>
+						<!-- This is how you implement textarea in html -->
+						<textarea name="comments" rows="10" cols="30"> 
+							Please submit your comments here.
+						</textarea>						
+					 </fieldset>
+					 <br><br>
+					 <fieldset>
+						<legend>Student's Color and Todays Date.</legend>
+						<!-- input type is color-->
+						<label for="fcolor"> Pick your Fav Color:</label>
+						<input id="fcolor"type="color" name="favColor" 
+						value="#ff0000"/>
+						<br><br>
+						<!-- inpput type is a date-->
+						<label for="tdate">Select Today's Date: </label>
+						<input type="date" id="tdate"name="tdate"/>
+						<br><br>
+					     <!-- input type=file, add 'multiple' to input tag to selecte 
+							more than 1 file						 -->
+						 <label for="resume"> Upload Resume: </label>
+						 <input type="file" id="resume" values="file"/> 
+						
+						
+					</fieldset>
+					 <!-- start of a button and end of the button -->
+					 <br><br>
+					 <input type="Submit" value="Send"/>
+					 
+					 <input type="reset" value="reset"/>
+					 
+					 
+				</form>
+				<!-- end of Form -->
+			</div> <!-- end of content div -->
+		</div> <!-- end of div named 'main ' -->
+	</body>
+</html>
